@@ -32,6 +32,7 @@ function calculate() {
     var valLengthAsp = [];
     var valWidthAsp = [];
     var valThickAsp = [];
+    var valunitPriceAsp = [];
     var volumeAsp = 0;
     var priceAsp = 0;
     var weightAsp = 0;
@@ -42,9 +43,10 @@ function calculate() {
         valThickAsp.push((thicknessAsp[i].value));
         volumeAsp += (valLengthAsp[i] * valWidthAsp[i] * valThickAsp[i])
     }
+    valunitPriceAsp.push((unitPriceAsp[0].value));
 
     //Harga Bahan cal
-    priceAsp = volumeAsp * (unitPriceAsp[0].value);
+    priceAsp = volumeAsp * (valunitPriceAsp[0]);
     var priceBahan = priceKas + priceAsp;
 
     // senarai harga
@@ -62,4 +64,3 @@ function calculate() {
     document.getElementById("priceJumlah").innerHTML = " RM " + priceJumlah.toFixed();
 
 };
-
