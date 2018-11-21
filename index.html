@@ -12,8 +12,10 @@
 <body>
     <div class="container">
         <div class="jumbotron text-center" style="margin-bottom:0">
-                <h1><b> ML PAVING & CONSTRUCTIONS</b></h1><br><br>
-                <u><h2>  Anggaran Kos Projek</h2></u><br>
+            <h1><b> ML PAVING & CONSTRUCTIONS</b></h1><br>
+            <u>
+                <h2> Anggaran Kos Projek</h2>
+            </u><br>
 
             <ul>
                 <h3> Kasaran</h3>
@@ -88,7 +90,7 @@
 
 
             <br>
-            <h3>Harga Unit</h3><br>
+            <h3>Harga Unit</h3>
 
             <div class="p-3 mb-2 bg-info text-white">
                 <div class="row">
@@ -110,15 +112,53 @@
                 </div>
             </div>
             <br>
-            <h3>Jumlah Harga Bahan</h3><br>
+            <h3>Senarai Harga </h3>
+
+            <div class="p-3 mb-2 bg-dark text-white">
+                <div class="row">
+                    <h3 class="col-sm-6" id="bahan" .lead>Bahan:</h3>
+                    <div class="col-sm-6">
+                        <u>
+                            <h3 id="priceBahan" .lead>RM</h3>
+                        </u>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <h3 class="col-sm-6" id="buruh" .lead>Buruh:</h3>
+                    <div class="col-sm-6">
+                        <input type="number" class="priceBuruh" value="" placeholder="$$">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <h3 class="col-sm-6" id="perangkutan" .lead>Perangkutan:</h3>
+                    <div class="col-sm-6">
+                        <input type="number" class="pricePerangkut" value="" placeholder="$$">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <h3 class="col-sm-6" id="buruh" .lead>Lain-lain:</h3>
+                    <div class="col-sm-6">
+                        <input type="number" class="priceLain" value="" placeholder="$$">
+                    </div>
+                </div>
+            </div>
 
             <div class="p-3 mb-2 bg-warning text-dark">
-                <u>
-                    <h3 id="price" .lead>RM</h3>
-
-                </u>
+                <div class="row">
+                    <h3 class="col-sm-6" id="jumlah" .lead>Jumlah:</h3>
+                    <div class="col-sm-6">
+                        <u>
+                            <h3 id="priceJumlah" .lead>RM</h3>
+                        </u>
+                    </div>
+                </div>
             </div>
-            <button onclick="calculate()">calculate </button>
+
+            <button onclick="calculate()">Calculate </button>
+            <button onclick="myFunction()">Print this page</button>
 
 
 
@@ -128,8 +168,8 @@
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
                 crossorigin="anonymous"></script>
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-                crossorigin="anonymous"></script><br><br><br><br>
-                <h5 align='right '>Sebarang pertanyaan, sila hubungi: <br><br>Mr Cham <br>013-7793898<br>013-6135258</h5>
+                crossorigin="anonymous"></script><br><br>
+            <h5 align='right '>Sebarang pertanyaan, sila hubungi: <br>Mr Cham <br>013-7793898/013-6135258</h5>
 
         </div>
         <h6>Notis: Harga yang dipaparkan di sini hanya untuk anggaran, kos akhir bergantung kepada sebut harga</h6><br>
