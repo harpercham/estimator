@@ -93,3 +93,10 @@ function showPosition(position) {
     document.getElementById("latlng").value = x.innerHTML;
 
 }
+
+function copyFunction() {
+var copyText=document.getElementById("latlng");
+copyText.select();
+document.execCommand("copy");
+
+}
