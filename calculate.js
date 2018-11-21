@@ -78,7 +78,6 @@ function getLocation() {
     }
 }
 
-var x = document.getElementById("demo");
 
 function getLocation() {
     if (navigator.geolocation) {
@@ -89,8 +88,8 @@ function getLocation() {
 }
 
 function showPosition(position) {
-    x.innerHTML = position.coords.latitude + ','+ position.coords.longitude;
-    document.getElementById("latlng").value = x.innerHTML;
+    var x = position.coords.latitude + ','+ position.coords.longitude;
+    document.getElementById("latlng").value = x;
 
 }
 
