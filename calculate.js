@@ -90,4 +90,6 @@ function getLocation() {
 
 function showPosition(position) {
     x.innerHTML = position.coords.latitude + ','+ position.coords.longitude;
+    document.getElementById("latlng").value = x.innerHTML;
+
 }
