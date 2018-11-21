@@ -21,7 +21,7 @@ function calculate() {
         valThickKas.push((thicknessKas[i].value));
         volumeKas += (valLengthKas[i] * valWidthKas[i] * valThickKas[i])
     }
-    priceKas = volumeKas * (unitPriceKas[0].value);
+    priceKas = volumeKas * (unitPriceKas.value);
     weightKas = volumeKas * 2;
 
     //Asphalt
