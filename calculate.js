@@ -67,6 +67,7 @@ function calculate() {
     document.getElementById("priceJumlah").innerHTML = " RM " + priceJumlah.toFixed();
 
 };
+
 var x = document.getElementById("demo");
 
 function getLocation() {
