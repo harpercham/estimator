@@ -127,7 +127,7 @@
 
         <div class="p-3 mb-2 bg-info text-white">
             <div class="row">
-                <h3 class="col-sm-6" id="kasaran" .lead>Kasaran:</h3>
+                <h3 class="col-sm-6" id="kasaran" .lead>Kasaran ($/ton):</h3>
 
                 <div class="col-sm-6">
                     <input type="number" class="unitpriceKas" value="" placeholder="$$">
@@ -137,7 +137,7 @@
 
         <div class="p-3 mb-2 bg-danger text-white">
             <div class="row">
-                <h3 class="col-sm-6" id="asphalt" .lead>Asphalt:</h3>
+                <h3 class="col-sm-6" id="asphalt" .lead>Asphalt ($/ton):</h3>
 
                 <div class="col-sm-6">
                     <input type="number" class="unitpriceAsp" value="" placeholder="$$">
@@ -192,7 +192,10 @@
 
         <button onclick="calculate()">Calculate </button>
         <button onclick="myFunction()">Print this page</button>
+        <button onclick="saveFunction()">Save</button>
+        <button onclick="loadFunction()">Load</button>
 
+        <script type="text/javascript" src="webstorage.js"></script>
         <script type="text/javascript" src="geocodeLatLng.js"></script>
         <script type="text/javascript" src="calculate.js"></script>
         <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcyyWSd6ETju45EKjArNtJXAJt5w1xecQ&callback=initMap"></script>
