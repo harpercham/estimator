@@ -24,8 +24,8 @@ function calculate() {
         valThickKas.push((thicknessKas[i].value));
         volumeKas += (valLengthKas[i] * valWidthKas[i] * valThickKas[i])
     }
-    priceKas = volumeKas *1* (unitPriceKas[0].value);
     weightKas = volumeKas * 2;
+    priceKas = weightKas *1* (unitPriceKas[0].value);
 
     //Asphalt
     var lengthAsp = document.getElementsByClassName("lengthAsp");
@@ -49,7 +49,8 @@ function calculate() {
     valunitPriceAsp.push((unitPriceAsp[0].value));
 
     //Harga Bahan cal
-    priceAsp = volumeAsp * (valunitPriceAsp[0]);
+    weightAsp=volumeAsp*2.3;
+    priceAsp = weightAsp * (valunitPriceAsp[0]);
     var priceBahan = priceKas + priceAsp;
 
     // senarai harga
@@ -99,3 +100,4 @@ copyText.select();
 document.execCommand("copy");
 
 }
+
