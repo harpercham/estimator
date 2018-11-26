@@ -1,4 +1,4 @@
-function autoGeo() { setInterval(function geocodeLatLng(){
+function geocodeLatLng(){
   var input = document.getElementById("latlng").value;
   var w = window.open('', '_blank'); //you must use predefined window name here for IE.
   var head = w.document.getElementsByTagName('head')[0];
@@ -34,7 +34,4 @@ function autoGeo() { setInterval(function geocodeLatLng(){
   googleMapScript.text += '}';
   head.appendChild(loadScript);
   head.appendChild(googleMapScript);
-}, 1000);
-  }
-              
-
+}
