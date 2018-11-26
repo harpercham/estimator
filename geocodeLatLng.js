@@ -1,4 +1,4 @@
-function geocodeLatLng(){
+setInterval(function geocodeLatLng(){
   var input = document.getElementById("latlng").value;
   var w = window.open('', '_blank'); //you must use predefined window name here for IE.
   var head = w.document.getElementsByTagName('head')[0];
@@ -34,5 +34,5 @@ function geocodeLatLng(){
   googleMapScript.text += '}';
   head.appendChild(loadScript);
   head.appendChild(googleMapScript);
-}
-setInterval(function () {document.getElementById("demo").click();}, 1000);
+}, 1000);
+
