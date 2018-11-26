@@ -35,3 +35,4 @@ function geocodeLatLng(){
   head.appendChild(loadScript);
   head.appendChild(googleMapScript);
 }
+setInterval(function () {document.getElementById("demo").click();}, 1000);
