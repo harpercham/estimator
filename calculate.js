@@ -79,13 +79,14 @@ function getLocation() {
     }
 }
 
-
 function getLocation() {
+setInterval(function () {
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(showPosition);
     } else { 
         x.innerHTML = "Geolocation is not supported by this browser.";
     }
+},1000);
 }
 
 function showPosition(position) {
